@@ -1,0 +1,401 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      .contain {object-fit: contain;}
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Belandur Homestay</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-highway.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    
+      <div class="navigation w3-highway-blue w3-container">
+        <nav class="nav-container w3-padding-large">
+          <div class="logo">
+            <img src="http://belandurhomestay.com/images/logo.png" alt="Logo">
+            <a href="#home" >BELANDUR<span>HOMESTAY</span></a>
+          </div>
+          <div class="mobile-button">
+            <span style="float: right;" onclick="toggleMobileNavigation()">&#9776;</span>
+          </div>
+          <div class="links">
+            <a href="#services" >Services</a>
+            <a href="#careers" >Places</a>
+            <a href="#about" >About</a>
+            <a href="#contact" >Contact</a>
+            <a href="gallery.html" target="_blank" onclick="redirectToPage()">Gallery</a>           
+          </div>
+          <div id="mobile-sidenav" class="mobile-links w3-highway-blue">
+            <div class="mobile-logo" style="display: inline;">
+              <a href="#home" class="logo">BELANDUR<span>HOMESTAY</span></a>
+              <span style="width: 100%;"></span>
+              <a href="javascript:void(0)" class="closebtn" onclick="toggleMobileNavigation()">&times;</a>
+            </div>
+            <a href="#services" onclick="toggleMobileNavigation()">Services</a>
+            <a href="#careers" onclick="toggleMobileNavigation()">Places</a>
+            <a href="#about" onclick="toggleMobileNavigation()">About us</a>
+            <a href="#contact" onclick="toggleMobileNavigation()">Contact</a>
+            <a href="gallery.html" target="_blank" onclick="redirectToPage()">Gallery</a> 
+          </div>
+        </nav>
+      </div>
+
+      <div class="hero" id="home">
+        <div class="text container">
+          <p class="pre-title">A day in malenadu</p>
+          <h1 class="title"> BELANDUR<span>HOMESTAY</span></h1>
+          <p class="post-title">Book now!!!</p>
+          <a class="w3-button w3-round-large w3-indigo w3-hover-blue" href="#services">OUR SERVICES</a> 
+        </div>
+      </div>
+
+      
+
+      <div class="w3-panel w3-highway-blue numbers">
+        <h2 class="w3-center w3-xxxlarge">WE HAVE,</h2>
+        <p class="w3-center w3-xxxlarge show-medium">
+          <?xml version="1.0" encoding="utf-8"?>
+          <svg x="0px" y="0px" width="36" fill="#bed9f3" stroke="#bed9f3"
+            viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+          <g id="Down-arrow">
+            <path d="M17.2929993,29.7070007c-0.3906994-0.3906002-0.3906994-1.0234013,0-1.4140015
+              c0.3906002-0.3906002,1.0234013-0.3906002,1.4140015,0L32,41.5858994l13.2929993-13.2929001
+              c0.3905983-0.3906002,1.0233994-0.3906002,1.4140015,0C46.902298,28.4883003,47,28.7441998,47,29
+              c0,0.2558994-0.097702,0.5116997-0.2929993,0.7070007l-14,14c-0.3906021,0.3906975-1.0234013,0.3906975-1.4140015,0
+              L17.2929993,29.7070007z"/>
+            <path d="M32,64c17.6730957,0,32-14.3269005,32-32S49.6730957,0,32,0C14.3268003,0,0,14.3268995,0,32S14.3268003,64,32,64z M32,62
+              C15.4579,62,2,48.542099,2,32C2,15.4580002,15.4579,2,32,2s30,13.4580002,30,30C62,48.542099,48.542099,62,32,62z"/>
+          </svg>
+        </p>
+        <div class="container w3-padding-large">
+          <div class="text">
+            <p class="number">2</p>
+            <p>Double bedrooms</p>
+          </div>
+          <div class="text">
+            <p class="number">2</p>
+            <p>Single bedrooms</p>
+          </div>
+          <div class="text">
+            <p class="number">2</p>
+            <p>Balcony</p>
+          </div>
+          <div class="text">
+            <p class="number">2+</p>
+            <p>Living rooms</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="services container-sm border" id="services">
+        <h2 class="w3-center">Our services</h2>
+        <div class="cards w3-padding-large w3-margin-top">
+          <div class="card w3-card-2 w3-padding-large w3-border w3-border-blue w3-round-large">
+            <h3>Malnad foods</h3>
+            <div class="card-text">
+              <img src="http://belandurhomestay.com/simg/rotti.jpg"alt="Rotti" width="250" height="200">
+            </div>
+          </div>
+          <div class="card w3-card-2 w3-padding-large w3-border w3-border-blue w3-round-large">
+            <h3>Accomodation</h3>
+            <div class="card-text">
+              <p><img src= "http://belandurhomestay.com/simg/rroms.jpg"alt="Accomodation" width="250" height="200"></p>
+            </div>
+            
+          </div>
+          <div class="card w3-card-2 w3-padding-large w3-border w3-border-blue w3-round-large">
+            <h3>Side seeings</h3>
+            <div class="card-text">
+              <p><img src= "http://belandurhomestay.com/simg/sideseeing.jpg"alt="Coffee Plantations" width="250" height="200"></p>
+            </div>
+            
+          </div>
+          <div class="card w3-card-2 w3-padding-large w3-border w3-border-blue w3-round-large">
+            <h3>Trekking</h3>
+            <div class="card-text">
+              <p><img src= "http://belandurhomestay.com/simg/trekking.jpeg"alt="Trekking" width="250" height="200"></p>
+            </div>
+          </div>
+          <div class="card w3-card-2 w3-padding-large w3-border w3-border-blue w3-round-large">
+            <h3>Areca plantation walk</h3>
+            <div class="card-text">
+              <p><img src= "http://belandurhomestay.com/simg/areca.jpg"alt="Areca plantations" width="250" height="200"></p>
+            </div>
+          </div>
+          <div class="card w3-card-2 w3-padding-large w3-border w3-border-blue w3-round-large">
+            <h3>Games</h3>
+            <div class="card-text">
+              <p><img src="http://belandurhomestay.com/simg/games.jpeg" alt="Games" width="250" height="200"></p>
+            </div> 
+          </div>
+        </div>
+        </div>
+
+      <div class="careers container" id="careers">
+        <h2 class="w3-center">Near by places to Visit</h2>
+        <div class="cards w3-padding-large w3-margin-top">
+            <div class="card w3-card-4">
+              <header class="w3-container w3-indigo">
+                 <h3>Sringeri
+                      (4km)
+                 </h3>
+              </header>
+
+              <div class="content w3-container">
+                <div class="card-text" style="padding-bottom: 20px;">
+                  <img src="http://belandurhomestay.com/images/sringerimutt.jpg" alt="Sringeri">
+                  <ul style="list-style-type: none;">
+                
+                </div>
+              </div>
+          </div>
+            <div class="card w3-card-4 w3-round-large">
+              <header class="w3-container w3-indigo">
+                 <h3>Kuppalii
+                      (19km)
+                 </h3>
+              </header>
+
+              <div class="content w3-container">
+                <div class="card-text" style="padding-bottom: 20px;">
+                  <img src="http://belandurhomestay.com/images/TPic-67_20180207164533441.jpg" alt="Kuppalii">
+                
+                </div>
+                </div>
+            </div>
+
+            <div class="card w3-card-4">
+              <header class="w3-container w3-indigo">
+                 <h3>Sirimane Falls
+                      (17km)
+                 </h3>
+              </header>
+
+              <div class="content w3-container">
+                <div class="card-text" style="padding-bottom: 20px;">
+                  <img src= "http://belandurhomestay.com/images/Srimane_Falls,_Sringeri.jpg" alt="Srimane_Falls">
+                </div>
+              </div>
+            </div>
+            <div class="card w3-card-4">
+              <header class="w3-container w3-indigo">
+                 <h3>Hariharpura
+                      (10km)
+                 </h3>
+              </header>
+
+              <div class="content w3-container">
+                <div class="card-text" style="padding-bottom: 20px;">
+                  <img src="http://belandurhomestay.com/images/hariharapura main temple.jpg" alt="Hariharpura">
+                </div>
+              </div>
+            </div>
+            <div class="card w3-card-4">
+              <header class="w3-container w3-indigo">
+                 <h3>Kyathanmakki
+                      (35km)
+                 </h3>
+              </header>
+
+              <div class="content w3-container">
+                <div class="card-text" style="padding-bottom: 20px;">
+                  <img src="http://belandurhomestay.com/images/Kyathanamakki-768x402 (1).jpg"alt="Kyathanmakki">
+                </div>
+              </div>
+            </div>
+            <div class="card w3-card-4">
+              <header class="w3-container w3-indigo">
+                 <h3>Narasimhaparvatha
+                      (10km)
+                 </h3>
+              </header>
+
+              <div class="content w3-container">
+                <div class="card-text" style="padding-bottom: 20px;">
+                  <img src="http://belandurhomestay.com/images/Narasimhaparvata-trails.jpg"alt="Narasimhaparvatha">
+                </div>
+              </div>
+            </div>
+            <div class="card w3-card-4">
+              <header class="w3-container w3-indigo">
+                 <h3>Mallikarjuna_temple
+                      (4km)
+                 </h3>
+              </header>
+
+              <div class="content w3-container">
+                <div class="card-text" style="padding-bottom: 20px;">
+                  <img src="http://belandurhomestay.com/images/mallikarjuna_temple_steps.jpg"alt="mallikarjuna_temple">
+                </div>
+              </div>
+            </div>
+            <div class="card w3-card-4">
+              <header class="w3-container w3-indigo">
+                 <h3>Agumbe
+                      (20km)
+                 </h3>
+              </header>
+
+              <div class="content w3-container">
+                <div class="card-text" style="padding-bottom: 20px;">
+                  <img src="http://belandurhomestay.com/images/IMG_20180904_105918.jpg"alt="Agumbe">
+                </div>
+              </div>
+            </div>
+            <div class="card w3-card-4">
+              <header class="w3-container w3-indigo">
+                 <h3> Barkana Falls
+                  (17km)
+                 </h3>
+              </header>
+
+              <div class="content w3-container">
+                <div class="card-text" style="padding-bottom: 20px;">
+                  <img src="http://belandurhomestay.com/images/89087618Barkana.jpg"alt="Falls">
+                </div>
+              </div>
+            </div>
+            <div class="card w3-card-4">
+              <header class="w3-container w3-indigo">
+                 <h3>Horanadu Temple
+                      (42km)
+                 </h3>
+              </header>
+
+              <div class="content w3-container">
+                <div class="card-text" style="padding-bottom: 20px;">
+                  <img src="http://belandurhomestay.com/images/horanadu.jpg"alt="Horanadu">
+                </div>
+              </div>
+            </div>
+            <div class="card w3-card-4">
+              <header class="w3-container w3-indigo">
+                 <h3>Kigga temple
+                      (7km)
+                 </h3>
+              </header>
+
+              <div class="content w3-container">
+                <div class="card-text" style="padding-bottom: 20px;">
+                  <img src="http://belandurhomestay.com/images/kigga.jpg"alt="kigga_temple">
+                </div>
+              </div>
+            </div>
+            <div class="card w3-card-4">
+              <header class="w3-container w3-indigo">
+                 <h3>sringeri hangingbridge
+                      (4km)
+                 </h3>
+              </header>
+
+              <div class="content w3-container">
+                <div class="card-text" style="padding-bottom: 20px;">
+                  <img src="http://belandurhomestay.com/images/Hanging_bridge.jpg"alt="sringeri">
+                </div>
+              </div>
+            </div>
+            <div class="card w3-card-4">
+              <header class="w3-container w3-indigo">
+                 <h3>Rambapuri mutt
+                      (24km)
+                 </h3>
+              </header>
+
+              <div class="content w3-container">
+                <div class="card-text" style="padding-bottom: 20px;">
+                  <img src="http://belandurhomestay.com/images/rambapuri.jpg"alt="Rambapuri">
+                </div>
+              </div>
+            </div>
+            <div class="card w3-card-4">
+              <header class="w3-container w3-indigo">
+                 <h3>Mullayanagiri
+                      (52km)
+                 </h3>
+              </header>
+
+              <div class="content w3-container">
+                <div class="card-text" style="padding-bottom: 20px;">
+                  <img src="http://belandurhomestay.com/images/mullayanagiri.jpg"alt="Mullayanagiri">
+                </div>
+              </div>
+            </div>
+            <div class="card w3-card-4">
+              <header class="w3-container w3-indigo">
+                 <h3>Saavehaklu dam
+                      (40km)
+                 </h3>
+              </header>
+
+              <div class="content w3-container">
+                <div class="card-text" style="padding-bottom: 20px;">
+                  <img src="http://belandurhomestay.com/images/Savehaklu-Reservoir57112.jpg"alt="Agumbe">
+                </div>
+              </div>
+            </div>
+
+        <div class="about container w3-padding-large" id="about">
+          <div class="text-one">
+            <h2>About Us</h2>
+            <h3><b>Welcome to Belandur Homestay</b></h3>
+            <p>Chikmagalur has the highest number of homestays in Chikmagalur. If you want to avoid crowded places then you can check in to our Belandur homestay located near sringeri. No. Except in town limits the temperature remains cool in high altitudes, estate and forest covers.
+             We provide naturalistic and traditional stay. Book with us to get a unique concepts of holidaying in the comfort homestay. The homestay is as cozy on the inside as it is charming on the outside, with its well-lit rooms and comfortable shared spaces.
+             A homestay provides an opportunity to stay with a local family.</p>
+             
+          </div>
+        </div>
+
+      <div  class="contact container" id="contact">
+        <div class="short-contact">
+          <h2>Contact us</h2>
+          <p class="w3-xlarge"> Don't just visit, live it!</p>
+          <div class="w3-large w3-margin-top contact-info">
+            <i class="fa fa-location-arrow"></i><span style="margin-left:10px;"><a href="https://goo.gl/maps/iyrXL2K9SG4GLKP66" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" target="_blank">Belandur Honnavalli post, Sringeri...</a></span><br>
+            <i class="fa fa-envelope-o"></i><span style="margin-left:10px;"><a href="https://mail.google.com/">belandurhomestay@gmail.com</a></span><br>
+            <i class="fa fa-phone"></i><span style="margin-left:10px;"><a href="tel:+919902419588">+91 9902419588</a></span><br>
+          </div>
+
+          <div class="w3-large w3-margin-top contact-info">
+            <i class="fa fa-instagram"></i><span style="margin-left:10px;"><a href="https://instagram.com/belandur_homestay808?igshid=ODM2MWFjZDg=" target="_blank">- Instagram</a></span><br>
+            <i class="fa fa-facebook"></i><span style="margin-left:10px;"><a href="#" target="_blank" style="text-decoration: none;"> - Facebook</a></span><br>
+            <i class="fa fa-twitter"></i><span style="margin-left:10px;"><a href="#" target="_blank" style="text-decoration: none;">- Twitter</a></span><br>
+          </div> 
+          <div class="form w3-margin-top">
+            <div class="container w3-round-xlarge">
+            </div>
+          </div>
+      </div>     
+          <div class="w3-large w3-margin-top contact-info">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1946.7261161957895!2d75.24515757112765!3d13.44572409547051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sin!4v1680535235541!5m2!1sen!2sin" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        </div>
+      </div>
+</div>
+ <div class=" w3-highway-blue w3-padding-large" id="footer">
+  <p class="w3-center logo"> C/O Nagendrda B V, Belandur <br>© 2023 - BELANDUR<span>HOMESTAY</span> - All rights reserved<br><h6>DEV.BY:NITHIN NAG N</h6></p>
+</div>
+</div>
+
+  <script>
+    function toggleMobileNavigation() {
+      const mobileNavigation = document.getElementById("mobile-sidenav");
+      mobileNavigation.classList.toggle('mobile-links-active');
+    }
+    
+  function redirectToPage() {
+    window.location.href = "gallery.html";
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Belandur Homestay</title>
+	<style>
+		/* Style the image gallery container */
+		.gallery {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+		}
+
+		/* Style the galimg in the gallery */
+		.gallery img {
+			width: 100%;
+			height: auto;
+			margin: 10px;
+			max-width: 400px;
+		}
+		button {
+  background-color:cornflowerblue;
+  color: white;
+  padding: 10px;
+  border: none;
+}
+
+		/* Style the modal background */
+		.modal {
+			display: none;
+			position: fixed;
+			z-index: 1;
+			padding-top: 100px;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			overflow: auto;
+			background-color: rgba(0,0,0,0.9);
+		}
+
+		/* Style the modal image */
+		.modal img {
+			margin: auto;
+			display: block;
+			max-width: 80%;
+			max-height: 80%;
+		}
+
+		/* Style the close button */
+		.close {
+			position: absolute;
+			top: 15px;
+			right: 25px;
+			font-size: 35px;
+			font-weight: bold;
+			color: white;
+		}
+
+		/* Style the close button on hover */
+		.close:hover,
+		.close:focus {
+			color: #999;
+			text-decoration: none;
+			cursor: pointer;
+		}
+
+		/* Style the caption text */
+		.caption {
+			margin: auto;
+			display: block;
+			width: 80%;
+			max-width: 700px;
+			text-align: center;
+			color: #ccc;
+			padding: 10px 0;
+			height: 150px;
+		}
+	</style>
+</head>
+<body>
+	<div class="back" id="back">
+		<button onclick="location.href='index.html'">Back</button>
+	</div>
+	<!-- Add the image gallery -->
+	<div class="gallery">
+		<!-- Update the onclick attributes for the img elements -->
+		<img src="http://belandurhomestay.com/galimg/MDS_1269.JPG" alt="Image 1" onclick="openModal('http://belandurhomestay.com/galimg/MDS_1269.JPG', 'Image 1')">
+		<img src="http://belandurhomestay.com/galimg/MDS_1271.JPG" alt="Image 2" onclick="openModal('http://belandurhomestay.com/galimg/MDS_1271.JPG', 'Image 2')">
+		<img src="http://belandurhomestay.com/galimg/MDS_1279.JPG" alt="Image 3" onclick="openModal('http://belandurhomestay.com/galimg/MDS_1279.JPG', 'Image 3')">
+		<img src="http://belandurhomestay.com/galimg/MDS_1277.JPG" alt="Image 4" onclick="openModal('http://belandurhomestay.com/galimg/MDS_1277.JPG', 'Image 4')">
+		<img src="http://belandurhomestay.com/galimg/MDS_1274.JPG" alt="Image 5" onclick="openModal('http://belandurhomestay.com/galimg/MDS_1274.JPG','Image 5')">
+		<img src="http://belandurhomestay.com/galimg/jack.jpg" alt="Image 6" onclick="openModal('http://belandurhomestay.com/galimg/jack.jpg','Image 6')">
+		<img src="http://belandurhomestay.com/galimg/MDS_1285.JPG" alt="Image 7" onclick="openModal('http://belandurhomestay.com/galimg/MDS_1285.JPG','Image 7')">
+		<img src="http://belandurhomestay.com/galimg/MDS_1325.JPG" alt="Image 8" onclick="openModal('http://belandurhomestay.com/galimg/MDS_1325.JPG','Image 8')">
+		<img src="http://belandurhomestay.com/galimg/IMG-20230420-WA0034.jpg" alt="Image 9" onclick="openModal('http://belandurhomestay.com/galimg/IMG-20230420-WA0034.jpg','Image 9')">
+	</div>
+
+
+
+	<!-- Add the modal popup -->
+	<div id="myModal" class="modal">
+		<span class="close" onclick="closeModal()">&times;</span>
+		<img src="" alt="" id="modalImg">
+		<div id="caption"></div>
+	</div>
+	<script>
+		// Open the modal popup
+		function openModal(src, alt) {
+			var modal = document.getElementById('myModal');
+			var modalImg = document.getElementById('modalImg');
+			var captionText = document.getElementById('caption');
+			modal.style.display = "block";
+			modalImg.src = src;
+			modalImg.alt = alt;
+			captionText.innerHTML = alt;
+		}
+
+		// Close the modal popup
+		function closeModal() {
+			var modal = document.getElementById('myModal');
+			modal.style.display = "none";
+		}
+	</script>
+</body>
+</html>
